@@ -1,0 +1,30 @@
+/* 針對 Webkit 瀏覽器 (Chrome, Safari, Edge) */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px; /* 讓捲軸變得很細 */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent; /* 軌道透明，不佔空間感 */
+  margin: 20px; /* 讓捲軸上下留白，不要貼齊邊框 */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(
+    154,
+    52,
+    18,
+    0.2
+  ); /* 使用你主題的深橘色 (orange-900)，但給極低透明度 */
+  border-radius: 10px; /* 圓角化 */
+  transition: all 0.3s;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(154, 52, 18, 0.5); /* 滑鼠移上去時變深一點點 */
+}
+
+/* 針對 Firefox */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(154, 52, 18, 0.2) transparent;
+}
