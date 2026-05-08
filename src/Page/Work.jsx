@@ -38,14 +38,47 @@ const Work = ({ onBack, lang }) => {
                 onClick={(e) => e.stopPropagation()}
             >
                 {/* 1. Header: 縮小 padding 與字體以適應筆電 */}
-                <header className="w-full flex justify-between items-end px-6 md:px-10 py-5 md:py-8 border-b border-orange-200/40 shrink-0">
+                {/* 1. Header: 縮小 padding 與字體以適應筆電 */}
+                <header className="relative w-full flex justify-between items-end px-6 md:px-10 py-5 md:py-8 border-b border-orange-200/40 shrink-0">
                     <div className="flex flex-col">
-                        <h1 className="text-3xl md:text-5xl font-black text-orange-950 tracking-tighter uppercase leading-none">
-                            {t.title}
-                        </h1>
-                        <p className="text-orange-800/40 text-[10px] mt-2 font-bold tracking-widest uppercase">{t.desc}</p>
+                        <div className="flex items-center gap-4">
+                            {/* 標題 */}
+                            <h1 className="text-3xl md:text-5xl font-black text-orange-950 tracking-tighter uppercase leading-none">
+                                {t.title}
+                            </h1>
+
+                            {/* 簡約返回按鈕：直接跟在標題後面 */}
+                            <button
+                                onClick={onBack}
+                                className="group flex items-center justify-center p-1 transition-all active:scale-90"
+                                aria-label="Close"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    className="w-5 h-5 md:w-6 md:h-6 text-orange-950/20 group-hover:text-orange-950 transition-colors"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth={1.5}
+                                        d="M6 18L18 6M6 6l12 12"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <p className="text-orange-800/40 text-[10px] mt-2 font-bold tracking-widest uppercase">
+                            {t.desc}
+                        </p>
                     </div>
 
+                    {/* 右側保留給語言切換或音量按鈕（如果有） */}
+                    <div className="flex gap-4">
+                        {/* ... */}
+                    </div>
                 </header>
 
                 {/* 2. Nav: 縮小垂直間距 */}
