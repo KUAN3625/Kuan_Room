@@ -15,13 +15,13 @@ const Work = ({ onBack, lang }) => {
     const categories = ['3D', 'Web', 'Design'];
 
     const projects = [
-        { id: 3, title: "重啟", category: "3D", date: "2026.05", img: "img/Work/3D/Flower-0501.png" },
-        { id: 2, title: "Computer", category: "3D", date: "2026.03", img: "img/Work/3D/Computer.png" },
-        { id: 1, title: "Cat", category: "3D", date: "2026.03", img: "img/Work/3D/Cat.png" },
-        { id: 4, title: "Garden", category: "3D", date: "2026.03", img: "img/Work/3D/Garden.png" },
-        { id: 5, title: "Rabbit", category: "3D", date: "2026.03", img: "img/Work/3D/Rabbit.png" },
-        { id: 6, title: "Trial", category: "3D", date: "2026.03", img: "img/Work/3D/Trial.png" },
-        { id: 7, title: "Traffic Cone", category: "3D", date: "2026.02", img: "img/Work/3D/Triangular pyramid.png" },
+        { id: 3, title: "重啟", category: "3D", date: "2026.05", img: "img/Work/3D/Flower-0501.webp" },
+        { id: 2, title: "Computer", category: "3D", date: "2026.03", img: "img/Work/3D/Computer.webp" },
+        { id: 1, title: "Cat", category: "3D", date: "2026.03", img: "img/Work/3D/Cat.webp" },
+        { id: 4, title: "Garden", category: "3D", date: "2026.03", img: "img/Work/3D/Garden.webp" },
+        { id: 5, title: "Rabbit", category: "3D", date: "2026.03", img: "img/Work/3D/Rabbit.webp" },
+        { id: 6, title: "Trial", category: "3D", date: "2026.03", img: "img/Work/3D/Trial.webp" },
+        { id: 7, title: "Traffic Cone", category: "3D", date: "2026.02", img: "img/Work/3D/Triangular pyramid.webp" },
         { id: 8, title: "Plastic Sunset", category: "Web", date: "2025.06", img: "img/Work/web/Plastic_Sunse.jpg" },
         { id: 9, title: "X ?", category: "Design", date: "2025.03 ~ 202X.XX", img: "img/Work/Design/Boom.jpg" },
     ];
