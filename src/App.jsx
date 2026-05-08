@@ -12,7 +12,7 @@ import EasterEgg01 from './Page/EasterEgg01.jsx'
 
 function App() {
   const [page, setPage] = useState('scene')
-  const [lang, setLang] = useState('Ch')
+  const [lang, setLang] = useState('En')
   const [isMuted, setIsMuted] = useState(false);
   const [isLoading, setIsLoading] = useState(true)
 
