@@ -58,16 +58,16 @@ function Model2({ onEnterAbout, onEnterWork, isPaused, onEnterContact, onEnterEa
         } else if (isYT) {
             window.open("https://www.youtube.com/@kuan8771", "_blank");
         } else if (isEGG) {
-            window.open("https://x.com/kuan7763/status/2046929349123977590?s=20", "_blank");
+            window.open("https://x.com/kuan7763", "_blank");
         } else if (name === "About") {
             onEnterAbout();
         } else if (name === "Work") {
             onEnterWork();
         } else if (name === "Contoct") {
             onEnterContact();
-        } else if (name === "BOX_EGG" || parentName === "BOX_EGG") {
+        } /* else if (name === "BOX_EGG" || parentName === "BOX_EGG") {
             onEnterEasterEgg();
-        }
+        } */
     };
 
     const handleHoverState = (e, isHovering) => {
